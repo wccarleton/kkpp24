@@ -1,0 +1,7 @@
+Record_ID,Date,Time,Frequency,Pin,Diameter corr.
+24,16.07.2024,10:04:10,10kHz,No,None 
+
+,Susceptibility[10-3SI]
+1,0.0046
+
+Average,0.0046 +/- 0.0000 10-3SI
