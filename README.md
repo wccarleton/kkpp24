@@ -62,16 +62,16 @@ From the repository root, create the environment:
 conda env create -f environment.yml
 ```
 
-This creates an environment named `rapidgis`. Activate it with:
+This creates an environment named `kkpp24`. Activate it with:
 
 ```bash
-conda activate rapidgis
+conda activate kkpp24
 ```
 
 Then register the environment as a Jupyter kernel:
 
 ```bash
-python -m ipykernel install --user --name rapidgis --display-name "Python (rapidgis)"
+python -m ipykernel install --user --name kkpp24 --display-name "Python (kkpp24)"
 ```
 
 This makes the environment selectable from notebook interfaces such as JupyterLab, classic Jupyter Notebook, or VS Code.
@@ -83,7 +83,7 @@ For users who want to watch progress cell by cell, an interactive notebook inter
 One terminal-based route is:
 
 ```bash
-conda activate rapidgis
+conda activate kkpp24
 jupyter lab
 ```
 
@@ -93,13 +93,13 @@ Then open:
 Src/kohker_pp24.ipynb
 ```
 
-Select the `Python (rapidgis)` kernel if prompted, then run the notebook from top to bottom.
+Select the `Python (kkpp24)` kernel if prompted, then run the notebook from top to bottom.
 
 The same basic procedure works in VS Code:
 
 1. open the repository folder;
 2. open `Src/kohker_pp24.ipynb`;
-3. select the `Python (rapidgis)` kernel;
+3. select the `Python (kkpp24)` kernel;
 4. run all cells.
 
 If the notebook cannot find files such as `../Data/MagSusMap.xlsx`, check the working directory used by your notebook interface. The notebook is written with paths relative to `Src/`, so `../Data/` should point to the repository's `Data/` folder and `../Output/` should point to the repository's `Output/` folder. Running the notebook in place from `Src/kohker_pp24.ipynb` should preserve this structure.
@@ -109,12 +109,12 @@ If the notebook cannot find files such as `../Data/MagSusMap.xlsx`, check the wo
 The notebook can also be executed non-interactively from the repository root:
 
 ```bash
-conda activate rapidgis
+conda activate kkpp24
 jupyter nbconvert \
   --to notebook \
   --execute Src/kohker_pp24.ipynb \
   --inplace \
-  --ExecutePreprocessor.kernel_name=rapidgis \
+  --ExecutePreprocessor.kernel_name=kkpp24 \
   --ExecutePreprocessor.timeout=-1
 ```
 
