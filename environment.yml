@@ -9,7 +9,7 @@ dependencies:
   - ipywidgets
   - jupyterlab
   - nbconvert
-  - numpy=1.26
+  - numpy=2.0
   - pandas=2.2
   - scipy=1.15
   - matplotlib=3.10
@@ -18,5 +18,13 @@ dependencies:
   - pymc=5.22
   - numba=0.60
   - openpyxl=3.1
+  - geopandas=1.0
+  - plotly=6.0
+  - pointpats=2.5
+  - rasterio=1.4
+  - scikit-image=0.25
+  - statsmodels=0.14
+  - xarray>=2025.1,<2026.0
   - pip:
+      - --no-deps
       - chronocluster @ git+https://github.com/wccarleton/chronocluster.git
